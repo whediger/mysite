@@ -1,9 +1,10 @@
 .title {
-    margin-left: 20%;
+    position: absolute;
+    margin-left: 40%;
     margin-top: 30vh;
     padding-top: 40px;
-    height: 230px;
-    width: 280px;
+    height: 0px;
+    width: 0px;
     border-radius: 50%;
     background-color: rgba(244, 172, 4, 0.9);
     border: solid 5px black;
@@ -30,6 +31,49 @@
     font-family: sans-serif;
     font-weight: lighter;
     color: #586CBE;
+}
+.info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  width: 500px;
+  border-radius: 50%;
+  background-color: white;
+  color: black;
+  font-size: 2em;
+  font-family: sans-serif;
+}
+i {
+  margin-right: 10px;
+}
+.linkedin {
+  position: absolute;
+  margin-top: 450px;
+  margin-left: 350px;
+  width: 400px;
+  background-color: #966900;
+  border: solid 5px black;
+  color: #FFD063;
+}
+.phone {
+  position: absolute;
+  margin-top: 275px;
+  margin-left: 100px;
+  width: 600px;
+  height: 75px;
+  background-color: #F4D204;
+  border: solid 5px black;
+  color: #966900;
+}
+.github {
+  margin-top: 150px;
+  margin-left: 400px;
+  position: absolute;
+  height: 50px;
+  background-color: #968100;
+  border: solid 5px black;
+  color: #FFE963;
 }
 video {
     position: fixed;
