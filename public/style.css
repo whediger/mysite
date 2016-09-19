@@ -1,7 +1,7 @@
 .title {
     position: absolute;
-    margin-left: 40%;
-    margin-top: 30vh;
+    margin-left: 50%;
+    margin-top: 40vh;
     padding-top: 40px;
     height: 0px;
     width: 0px;
@@ -28,6 +28,7 @@
 #roll {
     display: none;
     margin-left: 21px;
+    margin-top: 5px;
     font-family: sans-serif;
     font-weight: lighter;
     color: #586CBE;
