@@ -21,7 +21,7 @@ function showCoords(event) {
 setTimeout(function(){
   document.getElementById("roll").style.visibility = 'visible';
   document.getElementById("roll").style.opacity = '1';
-}, 1200)
+}, 100)
 setTimeout(function(){
   document.getElementById("emailWrap").style.visibility = 'visible';
   document.getElementById("emailWrap").style.opacity = '1';
