@@ -7,20 +7,39 @@
     <link rel="stylesheet" href="/style/main.css" media="screen" title="no title" charset="utf-8">
     <link rel="stylesheet" href="/style/meyer.css" media="screen" title="no title" charset="utf-8">
   </head>
-  <body>
+  <body onload="startLogo()" onmousemove="showCoords(event)">
+
+    <div id="coordinates">
+
+    </div>
     <div class="whiteLineBg">
+      <div class="title">
+        <h1 id="name">Wes A Hediger</h1>
+        <h2 id="roll">Full Stack Developer</h2>
+      </div>
+      <div class="nav-wrapper" id="nav-wrapper">
+        <ul>
+          <li><a href="#"><span>LinkedIn</span></a></li>
+          <li><a href="#"><span>Resume</span></a></li>
+          <li><a href="#"><span>Github</span></a></li>
+          <li><a href="#"><span>Portfolio</span></a></li>
+        </ul>
+      </div>
       <div class="email">
-        <span id="email">wes.hediger@gmail.com</span>
+        <span id="email" data-clipboard-text="wes.hediger@gmail.com" onclick="copyEmail()">_wes.hediger@gmail.com_</span>
+        <span id="tooltipcopied">Copied!</span>
       </div>
       <div class="logoContainer">
           <div id="logo"></div>
       </div>
       <div class="phone">
-        <span id="phone">720.433.0406</span>
+        <span id="phone" data-clipboard-text="3035478715">_303.547.8715_</span>
       </div>
     </div>
+    <div class="copyEmail">
 
-    <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.5.12/clipboard.min.js"></script>
     <script type="text/javascript" src="js/vivus.min.js"></script>
     <script type="text/javascript" src="main.js"></script>
   </body>
