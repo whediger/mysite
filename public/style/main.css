@@ -99,30 +99,12 @@ body {
 #emailWrap {
   visibility: hidden;
   opacity: 0;
-  transition: all .3s ease 0.3s;
+  transition: all .5s ease 0.2s;
 }
 #email:hover{
   cursor: pointer;
   background-color: rgba(255,255,255,.2);
   margin-left: -4px;
-}
-.phone {
-  position: relative;
-  float: right;
-  margin-top: 60vh;
-  margin-left: 100%;
-  margin-right: -2px;
-  background-color: #00042C;
-  font-family: monospace;
-  font-size: 20px;
-  font-weight: lighter;
-  transform: rotate(90deg);
-  transform-origin: top right;
-}
-#phoneWrap {
-  visibility: hidden;
-  opacity: 0;
-  transition: all .3s ease 0.3s;
 }
 
 .email #tooltipcopied {
@@ -153,6 +135,25 @@ body {
     border-style: solid;
     border-color: lime transparent transparent transparent;
     transform: rotate(90deg);
+}
+
+.phone {
+  position: relative;
+  float: right;
+  margin-top: 60vh;
+  margin-left: 100%;
+  margin-right: -2px;
+  background-color: #00042C;
+  font-family: monospace;
+  font-size: 20px;
+  font-weight: lighter;
+  transform: rotate(90deg);
+  transform-origin: top right;
+}
+#phoneWrap {
+  visibility: hidden;
+  opacity: 0;
+  transition: all .3s ease 0.3s;
 }
 
 /*logo center  +==}========>*/

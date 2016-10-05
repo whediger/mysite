@@ -1,28 +1,43 @@
-$(document).ready(function(){
-  $('.title').hide();
-  $('.info').hide();
-  var bodyWidth = $('body').width()/100 * 60;
-  $('.title').delay(1000)
-  .fadeIn(200)
-  .animate({
-    height:'230px',
-    width: '280px',
-    marginLeft: bodyWidth + "px",
-    marginTop: '225px'},
-      8000, 'swing',
-    //callback: draw logo after animation finishes
-    function(){
-      new Vivus('logo', {
-        duration: 400,
-        file: 'wah-blue.svg',
+new Clipboard('#email');
+new Clipboard('#phone');
+
+function startLogo() {
+    new Vivus('logo', {
+        duration: 200,
+        file: 'assets/wah-blue.svg',
         type: 'oneByOne',
-        pathTimingFunction: Vivus.EASE_OUT});
-  });
+        pathTimingFunction: Vivus.EASE_OUT
+    });
+}
 
-  $('#name').delay(16000).fadeIn(500, 'swing');
-  $('#roll').delay(16500).fadeIn(500, 'swing');
-  $('.phone').delay(17000).fadeIn(500, 'swing');
-  $('.github').delay(17300).fadeIn(500, 'swing');
-  $('.linkedin').delay(17400).fadeIn(500, 'swing');
+function showCoords(event) {
+    var x = event.clientX;
+    var y = event.clientY;
+    x *= 127;
+    y *= 127;
+    var coor = "X: " + x + ", Y: " + y;
+    document.getElementById("coordinates").innerHTML = coor;
+}
+setTimeout(function(){
+  document.getElementById("roll").style.visibility = 'visible';
+  document.getElementById("roll").style.opacity = '1';
+}, 1500)
+setTimeout(function(){
+  document.getElementById("emailWrap").style.visibility = 'visible';
+  document.getElementById("emailWrap").style.opacity = '1';
+}, 50)
+setTimeout(function(){
+  document.getElementById("phoneWrap").style.visibility = 'visible';
+  document.getElementById("phoneWrap").style.opacity = '1';
+}, 100)
 
-});
+function copyEmail() {
+    var save = document.getElementById("tooltipcopied").className;
+    document.getElementById("tooltipcopied").style.visibility = 'visible';
+    document.getElementById("tooltipcopied").style.opacity = '1';
+    setTimeout(function(){
+      document.getElementById("tooltipcopied").style.visibility = 'hidden';
+      document.getElementById("tooltipcopied").style.opacity = '0';
+    }, 1500)
+    console.log(save);
+}
