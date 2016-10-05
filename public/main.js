@@ -18,6 +18,18 @@ function showCoords(event) {
     var coor = "X: " + x + ", Y: " + y;
     document.getElementById("coordinates").innerHTML = coor;
 }
+setTimeout(function(){
+  document.getElementById("roll").style.visibility = 'visible';
+  document.getElementById("roll").style.opacity = '1';
+}, 1200)
+setTimeout(function(){
+  document.getElementById("emailWrap").style.visibility = 'visible';
+  document.getElementById("emailWrap").style.opacity = '1';
+}, 100)
+setTimeout(function(){
+  document.getElementById("phoneWrap").style.visibility = 'visible';
+  document.getElementById("phoneWrap").style.opacity = '1';
+}, 100)
 
 function copyEmail() {
     var save = document.getElementById("tooltipcopied").className;

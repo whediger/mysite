@@ -55,6 +55,9 @@ body {
   to{opacity: .0;}
 }
 #roll {
+  visibility: hidden;
+  opacity: 0;
+  transition: all .3s ease 0.3s;
   position: absolute;
   margin-top: 10vh;
   margin-left: 5vh;
@@ -93,11 +96,15 @@ body {
   transform: rotate(-90deg);
   transform-origin: top left;
 }
+#emailWrap {
+  visibility: hidden;
+  opacity: 0;
+  transition: all .3s ease 0.3s;
+}
 #email:hover{
   cursor: pointer;
   background-color: rgba(255,255,255,.2);
   margin-left: -4px;
-
 }
 .phone {
   position: relative;
@@ -111,6 +118,11 @@ body {
   font-weight: lighter;
   transform: rotate(90deg);
   transform-origin: top right;
+}
+#phoneWrap {
+  visibility: hidden;
+  opacity: 0;
+  transition: all .3s ease 0.3s;
 }
 #phone:hover {
   cursor: pointer;
