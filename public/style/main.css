@@ -176,7 +176,9 @@ body {
 
 /*circular navagation +==}========>*/
 .container {
-    position: relative;
+    position: absolute;
+    margin-left: 50%;
+    margin-top: 10%;
     margin-bottom: 2em;
     height: 15em;
     background: rgba(0,0,0,0.09);
@@ -196,24 +198,26 @@ body {
     padding: 15px;
 }
 
-.button {
-    position: absolute;
-    top: 100%;
-    left: 50%;
+.navButton {
+    position: relative;
+    top: 108.2%;
+    left: 5%;
     z-index: 11;
     margin-top: -2.25em;
     margin-left: -2.25em;
-    padding-top: 0em;
+    padding-top: 2.5em;
     width: 4.5em;
     height: 4.5em;
     border: 5px solid rgba(0,0,0,0.05);
     border-radius: 50%;
     background: none;
-    background-color: #fff;
-    color: #1780b4;
+    background-color: rgba(0,0,0,0);
+    opacity: .9;
+    color: lime;
     text-align: center;
+    font-family: monospace;
     font-weight: 700;
-    font-size: 1.5em;
+    font-size: 2em;
     text-transform: uppercase;
     cursor: pointer;
     -webkit-backface-visibility: hidden;
@@ -224,8 +228,8 @@ body {
 
 .nav-wrapper {
     position: absolute;
-    top: 100%;
-    left: 50%;
+    top: 110%;
+    left: 5%;
     z-index: 10;
     margin-top: -13em;
     margin-left: -13.5em;
@@ -286,7 +290,6 @@ body {
 
 .nav-wrapper li {
     position: absolute;
-    top: 50%;
     left: 50%;
     overflow: hidden;
     margin-top: -1.3em;
@@ -318,13 +321,14 @@ body {
     height: 14.5em;
     border-radius: 50%;
     background: #429a67;
-    background: -webkit-radial-gradient(transparent 35%, #1780b4 35%);
-    background: -moz-radial-gradient(transparent 35%, #1780b4 35%);
-    background: radial-gradient(transparent 35%, #1780b4 35%);
-    color: #fff;
+    background: -webkit-radial-gradient(transparent 25%, lime 35%);
+    background: -moz-radial-gradient(transparent 25%, lime 35%);
+    background: radial-gradient(transparent 25%, lime 35%);
+    color: #00042C;
     text-align: center;
     text-decoration: none;
     font-size: 1.2em;
+    font-weight: bolder;
     line-height: 2;
     -webkit-transform: skew(-60deg) rotate(-75deg) scale(1);
     -moz-transform: skew(-60deg) rotate(-75deg) scale(1);
@@ -349,9 +353,10 @@ body {
 .nav-wrapper li a:hover,
 .nav-wrapper li a:active,
 .nav-wrapper li a:focus {
-    background: -webkit-radial-gradient(transparent 35%, #1775a4 35%);
-    background: -moz-radial-gradient(transparent 35%, #1775a4 35%);
-    background: radial-gradient(transparent 35%, #1775a4 35%);
+    opacity: .7;
+    background: -webkit-radial-gradient(transparent 25%, lime 35%);
+    background: -moz-radial-gradient(transparent 25%, lime 35%);
+    background: radial-gradient(transparent 25%, lime 35%);
 }
 
 
