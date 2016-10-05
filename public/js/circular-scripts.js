@@ -1,19 +1,17 @@
 (function(){
 
-	var button = document.getElementById('button'),
+	var navButton = document.getElementById('navButton'),
     wrapper = document.getElementById('nav-wrapper');
 
     //open and close menu when the button is clicked
 	var open = false;
-	button.addEventListener('click', handler, false);
+	navButton.addEventListener('click', handler, false);
 
 	function handler(){
 	  if(!open){
-	    this.innerHTML = "Close";
 	    classie.add(wrapper, 'opened-nav');
 	  }
 	  else{
-	    this.innerHTML = "Menu";
 		classie.remove(wrapper, 'opened-nav');
 	  }
 	  open = !open;
