@@ -14,3 +14,7 @@ source of much Inspiration: https://github.com/lhbzr/bookmarks#people
 * portfolio
 
 ## add link to 404 page back to home page.
+
+## add about section in finger format
+
+##need to make the navigation location responsive

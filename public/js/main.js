@@ -49,3 +49,13 @@ function copyEmail() {
     }, 1500);
     console.log(save);
 }
+
+// handle navagation click events +==}========>
+
+document.getElementById("contactBG").addEventListener("click", hideContact, false);
+function showContact(){
+  document.getElementById("contactBG").style.visibility = 'visible';
+}
+function hideContact(){
+  document.getElementById("contactBG").style.visibility = 'hidden';
+}
