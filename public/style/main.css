@@ -477,19 +477,32 @@ body {
   border: 3px solid #A2AFA4;
   border-radius: 50%;
 }
-.aboutMe {
+.aboutContent {
   margin-left: 30%;
   margin-top: -5%;
+  width: 60%;
+  height: 50%;
+  overflow: hidden;
+  overflow: scroll;
+}
+.about div {
+  margin-bottom: 5%;
   font-family: sans-serif;
   font-weight: lighter;
   font-size: 1em;
   line-height: 1.5;
   color: white;
-  height: 50%;
-  width: 60%;
 }
-.aboutMe h2 {
+.about div h2 {
   margin-bottom: 1%;
   font-size: 2em;
   font-weight: bold;
+}
+.about div ul {
+  list-style: circle;
+  margin-left: 5%;
+}
+.aboutSite i {
+  margin-bottom: 3%;
+  color: yellow;
 }
