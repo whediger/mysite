@@ -420,7 +420,7 @@ body {
   border-radius: 20px;
 }
 .contact span {
-    color: lime;
+    color: red;
     font-weight: bolder;
     animation: blink .8s infinite;
 }
@@ -455,9 +455,9 @@ body {
   left: 12%;
   top: 12%;
   z-index: 21;
-  background-color: white;
-  border: 5px solid grey;
-  border-radius: 20px;
+  background-color: #1D181A;
+  border: 5px solid #A2AFA4;
+  border-radius: 30px;
 }
 .closeButton {
   position: relative;
@@ -474,6 +474,22 @@ body {
   margin-left: 2%;
   height: 200px;
   width: 236px;
-  border: 3px solid black;
+  border: 3px solid #A2AFA4;
   border-radius: 50%;
+}
+.aboutMe {
+  margin-left: 30%;
+  margin-top: -5%;
+  font-family: sans-serif;
+  font-weight: lighter;
+  font-size: 1em;
+  line-height: 1.5;
+  color: white;
+  height: 50%;
+  width: 60%;
+}
+.aboutMe h2 {
+  margin-bottom: 1%;
+  font-size: 2em;
+  font-weight: bold;
 }
