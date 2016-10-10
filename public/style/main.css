@@ -481,18 +481,29 @@ body {
   margin-left: 30%;
   margin-top: -5%;
   width: 60%;
-  height: 50%;
+  height: 60%;
   overflow: hidden;
   overflow: scroll;
 }
+::-webkit-scrollbar {
+    -webkit-appearance: none;
+    width: 7px;
+}
+::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    background-color: rgba(0,0,0,.5);
+    -webkit-box-shadow: 0 0 1px rgba(255,255,255,.5);
+}
 .about div {
   margin-bottom: 5%;
+  margin-right: 5%;
   font-family: sans-serif;
   font-weight: lighter;
   font-size: 1em;
   line-height: 1.5;
   color: white;
 }
+
 .about div h2 {
   margin-bottom: 1%;
   font-size: 2em;
