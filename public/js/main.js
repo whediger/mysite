@@ -67,3 +67,13 @@ function showAbout(){
 function hideAbout(){
   document.getElementById("aboutBG").style.visibility = 'hidden';
 }
+
+// construction elements +==}========>
+
+document.getElementById("constructionBG").addEventListener("click", hideConstruction, false);
+function showConstruction(){
+  document.getElementById("constructionBG").style.visibility = 'visible';
+}
+function hideConstruction(){
+  document.getElementById("constructionBG").style.visibility = 'hidden';
+}
