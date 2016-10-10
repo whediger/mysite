@@ -390,15 +390,6 @@ body {
 
 /*contact model +==}========>    */
 
-.powerLight {
-  margin-left: 10%;
-  margin-top: 3%;
-  height: 1%;
-  width:3%;
-  background: linear-gradient(to right, #93B724, #C7FD0D);
-  border: 1px outset grey;
-  box-shadow: 0px 0px 3px lime;
-}
 #contactBG {
   visibility: hidden;
   position: absolute;
@@ -432,4 +423,39 @@ body {
     color: lime;
     font-weight: bolder;
     animation: blink .8s infinite;
+}
+.powerLight {
+  margin-left: 10%;
+  margin-top: 3%;
+  height: 1%;
+  width:3%;
+  background: linear-gradient(to right, #93B724, #C7FD0D);
+  border: 1px outset grey;
+  box-shadow: 0px 0px 3px lime;
+}
+/*about model +==}========>*/
+#aboutBG {
+  visibility: hidden;
+  position: absolute;
+  z-index: 20;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);;
+}
+#aboutBG a {
+  text-decoration: none;
+}
+#aboutBG a:hover {
+  text-decoration:line-through;
+}
+.about {
+  position: relative;
+  height: 75%;
+  width: 75%;
+  left: 12%;
+  top: 12%;
+  z-index: 21;
+  background-color: white;
+  border: 5px solid black;
+  border-radius: 20px;
 }

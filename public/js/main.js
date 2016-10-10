@@ -59,3 +59,11 @@ function showContact(){
 function hideContact(){
   document.getElementById("contactBG").style.visibility = 'hidden';
 }
+
+document.getElementById("aboutBG").addEventListener("click", hideAbout, false);
+function showAbout(){
+  document.getElementById("aboutBG").style.visibility = 'visible';
+}
+function hideAbout(){
+  document.getElementById("aboutBG").style.visibility = 'hidden';
+}
