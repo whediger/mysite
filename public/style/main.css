@@ -439,7 +439,9 @@ body {
   border: 1px outset grey;
   box-shadow: 0px 0px 3px lime;
 }
+
 /*about model +==}========>*/
+
 #aboutBG {
   visibility: hidden;
   position: absolute;
@@ -525,6 +527,54 @@ body {
 
 /*resume divs +==}========>*/
 /* TODO: remove id from link in HTML and text decoration*/
+#resumeBG {
+  visibility: hidden;
+  position: absolute;
+  z-index: 20;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.resume {
+  width: 75%;
+  height: 85%;
+  margin-left: 12%;
+  margin-top: 3%;
+  background-color: #A2AFA4;
+  border: 3px solid ;
+  border-radius: 20px;
+}
+.resume i {
+}
+.resumeImg {
+  margin-left: 2%;
+  position: relative;
+  height: 80%;
+  width: 95%;
+  overflow: hidden;
+  overflow: scroll;
+  border: 3px solid black;
+  /*make this cover most of it with a button */
+}
+.resume .downLoadResume {
+  width: 30%;
+  height: 7%;
+  padding-top: 1%;
+  padding-left: 2%;
+  margin-left: 2%;
+  margin-top: 1%;
+  color: #0101DA;
+  background-color: black;
+  font-size: 2em;
+  font-weight: bolder;
+  font-family: monospace;
+  border: 2px inset lightgrey;
+  border-radius: 10px;
+}
+.resume .downLoadResume:hover {
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.2);
+}
 #resumeLink {
   text-decoration: line-through;
 }

@@ -68,6 +68,14 @@ function hideAbout(){
   document.getElementById("aboutBG").style.visibility = 'hidden';
 }
 
+document.getElementById("resumeBG").addEventListener("click", hideResume, false);
+function showResume(){
+  document.getElementById("resumeBG").style.visibility = 'visible';
+}
+function hideResume(){
+  document.getElementById("resumeBG").style.visibility = 'hidden';
+}
+
 // construction elements +==}========>
 
 document.getElementById("constructionBG").addEventListener("click", hideConstruction, false);
