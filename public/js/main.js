@@ -47,7 +47,6 @@ function copyEmail() {
       document.getElementById("tooltipcopied").style.visibility = 'hidden';
       document.getElementById("tooltipcopied").style.opacity = '0';
     }, 1500);
-    console.log(save);
 }
 
 // handle navagation click events +==}========>
